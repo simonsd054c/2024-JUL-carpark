@@ -1,4 +1,6 @@
-print("Welcome to the Carpark Application!!!\n")
+from colored import Fore, Back, Style
+
+print(f"{Fore.yellow}{Back.red}Welcome to the Carpark Application!!!{Style.reset}\n")
 
 def create_menu():
     print("Enter 1 to add a parking slot.")

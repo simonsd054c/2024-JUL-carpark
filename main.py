@@ -1,7 +1,7 @@
 from colored import Fore, Back, Style
 
 from classes.carpark import Carpark
-from functions.carpark_functions import add_slot, list_slots, delete_slot
+from functions.carpark_functions import add_slot, list_slots, delete_slot, park_car
 
 print(f"{Fore.yellow}{Back.red}Welcome to the Carpark Application!!!{Style.reset}\n")
 
@@ -32,7 +32,7 @@ while choice != "7":
     elif choice == "3":
         list_slots(carpark)
     elif choice == "4":
-        print("Park car")
+        park_car(carpark)
     elif choice == "5":
         print("Find car")
     elif choice == "6":

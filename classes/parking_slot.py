@@ -10,6 +10,12 @@ class ParkingSlot:
             self.car = car
             return True
     
+    def get_id(self):
+        return self.id
+    
+    def get_car(self):
+        return self.car
+    
     def __str__(self):
         if self.car:
             return f"Parking slot with id {self.id} and has the following car: {self.car}"
